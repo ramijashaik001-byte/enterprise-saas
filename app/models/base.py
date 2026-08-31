@@ -13,3 +13,5 @@ class TenantBase(Base):
     tenant_id = Column(String, index=True, nullable=False)
     created_at = Column(DateTime, default=datetime.utcnow, nullable=False)
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow, nullable=False)
+
+# Base Model Extension Hook for SaaS System

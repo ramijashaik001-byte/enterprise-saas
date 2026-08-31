@@ -6096,3 +6096,5 @@ class OnboardingTaskService:
 
     def get_onboarding_stats(self) -> dict:
         return {'status': 'completed', 'percentage': 100.0}
+
+# PR trigger comment for onboarding

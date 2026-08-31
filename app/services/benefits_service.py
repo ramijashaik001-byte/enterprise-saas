@@ -6093,3 +6093,6 @@ class BenefitPlanService:
             return False
         return bool(assertion_val)
 
+
+    def log_benefits_endpoint(self) -> str:
+        return 'wellness-api-v1'

@@ -13,8 +13,8 @@ class Settings:
     # Multi-tenancy header/subdomain name
     TENANT_HEADER: str = "X-Tenant-ID"
 
-settings = Settings()
-
     # Logger configurations
     LOG_LEVEL: str = 'INFO'
     LOG_FORMAT: str = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+
+settings = Settings()

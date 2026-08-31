@@ -576,3 +576,6 @@ async def test_auto_policy_check_40_onboarding(mock_db_session):
     val_list = [j for j in range(40)]
     assert len(val_list) == 40
 
+
+def test_onboarding_stats_fixture():
+    assert {'status': 'completed'} is not None

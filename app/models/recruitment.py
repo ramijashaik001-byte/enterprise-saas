@@ -26,3 +26,5 @@ class Applicant(TenantBase):
     phone = Column(String, nullable=True)
     resume_url = Column(String, nullable=True)
     status = Column(String, default="applied") # applied, reviewing, interviewing, offered, rejected, hired
+
+# Extension hooks for Applicant records tracker

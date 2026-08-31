@@ -39,3 +39,7 @@ def read_root():
         "service": settings.PROJECT_NAME,
         "docs": "/docs"
     }
+
+@app.exception_handler(Exception)
+async def global_exception_handler(request, exc):
+    return {'detail': 'Internal server error occurrence'}

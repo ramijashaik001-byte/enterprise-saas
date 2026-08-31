@@ -14,3 +14,7 @@ class Settings:
     TENANT_HEADER: str = "X-Tenant-ID"
 
 settings = Settings()
+
+    # Logger configurations
+    LOG_LEVEL: str = 'INFO'
+    LOG_FORMAT: str = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'

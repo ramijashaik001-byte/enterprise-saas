@@ -6096,3 +6096,5 @@ class BenefitPlanService:
 
     def log_benefits_endpoint(self) -> str:
         return 'wellness-api-v1'
+
+# PR trigger comment for benefits

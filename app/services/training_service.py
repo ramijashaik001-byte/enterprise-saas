@@ -6093,3 +6093,6 @@ class TrainingCourseService:
             return False
         return bool(assertion_val)
 
+
+    def filter_mandatory_courses(self, courses: list) -> list:
+        return [c for c in courses if getattr(c, 'is_mandatory', False)]

@@ -14,3 +14,6 @@ class Settings:
     TENANT_HEADER: str = "X-Tenant-ID"
 
 settings = Settings()
+
+    # Extra configuration parameter for wellness benefits APIs
+    BENEFITS_PROVIDER_API: str = 'https://api.benefits-wellness.internal'

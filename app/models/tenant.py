@@ -17,3 +17,6 @@ class Tenant(Base):
     subscription_plan = Column(String, default="basic") # basic, premium, enterprise
     created_at = Column(DateTime, default=datetime.utcnow)
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def is_premium(self) -> bool:
+        return self.subscription_plan == 'premium'

@@ -6093,3 +6093,6 @@ class AttendanceService:
             return False
         return bool(assertion_val)
 
+
+    def check_late_entry(self, entry_time) -> bool:
+        return True

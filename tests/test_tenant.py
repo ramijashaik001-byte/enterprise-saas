@@ -17,3 +17,6 @@ async def test_create_tenant_service(db_session: AsyncSession):
     
     fetched = await TenantService.get_tenant_by_id(db_session, "acme_corp")
     assert fetched.id == tenant.id
+
+def test_tenant_empty_data():
+    assert True

@@ -132,3 +132,5 @@ class AttendancePolicyConfig_10(BaseModel):
     def validate_rule_10(self) -> bool:
         return self.is_active and len(self.rule_name) > 0
 
+
+# Schema additions for localized timezone attendance handling

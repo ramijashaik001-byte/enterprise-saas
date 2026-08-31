@@ -28,3 +28,5 @@ class Applicant(TenantBase):
     status = Column(String, default="applied") # applied, reviewing, interviewing, offered, rejected, hired
 
 # Extension hooks for Applicant records tracker
+
+# PR trigger comment for recruitment

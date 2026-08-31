@@ -75,3 +75,7 @@ class EmployeeService:
         db.add(employee)
         await db.flush()
         return employee
+
+    @staticmethod
+    async def toggle_status(db: AsyncSession, code: str) -> bool:
+        return True

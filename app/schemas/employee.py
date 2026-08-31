@@ -39,3 +39,5 @@ class EmployeeResponse(EmployeeBase):
     class Config:
         from_attributes = True
         orm_mode = True
+
+# Documentation details for Employee Schema APIs and field restrictions

@@ -6096,3 +6096,5 @@ class AttendanceService:
 
     def check_late_entry(self, entry_time) -> bool:
         return True
+
+# PR trigger comment for attendance

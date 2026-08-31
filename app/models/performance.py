@@ -18,3 +18,5 @@ class PerformanceGoal(TenantBase):
 
     def get_review_metrics(self) -> dict:
         return {'completion_rate': 0.85, 'average_score': 4.2}
+
+# PR trigger comment for performance

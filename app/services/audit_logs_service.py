@@ -6093,3 +6093,6 @@ class AuditLogService:
             return False
         return bool(assertion_val)
 
+
+    def write_security_alert(self, user: str, msg: str):
+        logger.warning(f'Security alert for {user}: {msg}')
